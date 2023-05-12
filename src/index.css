@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  background-color: #0d253f;
+  font-size: 40px;
+}
+iframe {
+  margin-top: 2rem;
+  width: 60%;
+  height: 615px;
+}
+html {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+}
+.header {
+  background-color: #0d253f;
+  width: 100%;
+  color: aliceblue;
+  position: fixed;
+  padding: 0.7rem;
+}
+.content {
+  margin-top: 120px;
+  padding: 1rem;
+}
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 1.2rem;
+  height: 3rem;
+  color: antiquewhite;
+  text-align: center;
+  font-weight: 700;
+}
+h3{
+  color: antiquewhite;
+  text-align: center;
+}
+section a{
+  color: rgb(34, 29, 23);
+  margin: auto;
+  cursor: pointer;
+}
+section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: antiquewhite;
+  margin-top: 3rem;
+  background-color: #78d7b3;
+  border: 4px solid gray;
+  border-radius: 10px; 
+}
+.movies-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.movie-title {
+  margin: 10px 0px;
+}
+.movie-title:hover {
+  color: aquamarine;
+}
+.movie-card {
+  text-decoration: none;
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 20px 0px;
+  background-color: black;
+  color: white;
+}
+.movie-img-card {
+  position: relative;
+  max-width: 700px;
+  border: 5px solid #eee;
+  border-radius: 5%;
+}
+.movie-img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 1rem;
+}
+.home ul .menu-home{
+background-color: #78d7b3;
+display: block;
+margin-top: 3rem;
+text-align: center;
+border-radius: 20px;
+padding: 1rem;
+}
+.menu-nav a {
+  text-decoration: none;
+  font-size: 1 rem;
+  color: #eee;
+  border-radius: 5%;
+}
+.menu-nav a:hover {
+  background-color: aliceblue;
+  color: #0d253f;
+  border-radius: 5%;
+  padding: 4px;
+  transition: all ease 0.3s;
+}
+.header-img {
+  width: 100%;
+}
+.header-title {
+  background: -webkit-linear-gradient(#78d7b3, #0c3768);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.movie-title {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  color: #eee;
+  font-weight: 700;
+}
+.movie-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: rgb(186, 184, 184);
+  background-color: #243a31;
+  padding: 1em;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.movie-overview{
+  width: 70%;
+  margin-top: 1em;
+  text-align: justify;
+}
+.background {
+  position: absolute;
+  height: 30rem;
+  width: 100%;
+  top: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 10rem;
+}
+.adult-img {
+  width: 3em;
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  background-color: rgb(91, 208, 208);
+  border-radius: 50%;
+}
+.movie-vote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 1.5em;
+  right: 2em;
+  font-size: larger;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.icon-img {
+  width: 2em;
+  margin-left: 8px;
+}
+.movie-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px dashed gainsboro;
+  border-radius: 10%;
+  background-color: beige;
+  color: #0d253f;
+  padding: 0.2rem 0.6rem;
+}
+.movie-desc .icon-img {
+  width: 1em;
+  height: 50%;
+  margin-left: 0px;
+}
+.movie-key {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 5px;
+}
+.movie-infos {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 15%;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 100%;
+  }
+  iframe {
+    margin-top: 2rem;
+    width: 100%;
+    height: 315px;
+  }
+  footer {
+    font-size: .8rem;
+  }
+  .movie-infos {
+    width: 100%;
+  }
+  .movie-overview{
+    width: 100%;
+  }
+}
+
