@@ -89,12 +89,14 @@ export default function MovieDetail() {
         </div>
       </div>
       <div className="movie-overview">{movie.overview}</div>
-
       <iframe
+        width="560"
+        height="315"
         src={`https://www.youtube.com/embed/${video[0]?.key}`}
+        title="YouTube video player"
         frameborder="0"
-        allowfullscreen
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
       ></iframe>
     </div>
   );
